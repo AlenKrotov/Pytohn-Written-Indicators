@@ -24,3 +24,6 @@ def calculate_rsi(data, period=14):
     rsi = 100 - (100 / (1 + rs))
 
     return rsi
+
+# Example usage:
+# rsi_values = calculate_rsi(close_prices)
