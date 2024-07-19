@@ -22,3 +22,6 @@ def calculate_williams_r(high, low, close, period=14):
     wr = (highest_high - close) / (highest_high - lowest_low) * -100
 
     return wr
+
+# Example usage:
+# williams_r_values = calculate_williams_r(high_prices, low_prices, close_prices)
