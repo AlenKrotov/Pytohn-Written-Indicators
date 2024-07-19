@@ -17,3 +17,6 @@ def calculate_obv(close, volume):
                    np.where(close < close.shift(1), -volume, 0)).cumsum()
     
     return pd.Series(obv, name='OBV')
+
+# Example usage:
+# obv_values = calculate_obv(close_prices, volume)
