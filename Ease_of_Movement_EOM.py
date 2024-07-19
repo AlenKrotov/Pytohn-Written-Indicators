@@ -27,3 +27,6 @@ def calculate_eom(high, low, volume, period=14):
     eom_indicator = eom.rolling(window=period).mean()
 
     return eom_indicator
+
+# Example usage:
+# eom_values = calculate_eom(high_prices, low_prices, volume)
