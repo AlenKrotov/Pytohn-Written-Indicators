@@ -24,3 +24,6 @@ def calculate_atr(high, low, close, period=14):
     atr = tr.rolling(window=period).mean()
 
     return atr
+
+# Example usage:
+# atr_values = calculate_atr(high_prices, low_prices, close_prices)
